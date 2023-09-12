@@ -3,7 +3,7 @@ import men from '../../assets/men.png';
 import paaji from '../../assets/paaji.png';
 import Ellipse368 from '../../assets/Ellipse 368.svg';
 import Ellipse395 from '../../assets/Ellipse 395.svg';
-import Group5099 from '../../assets/Group 5099.svg';
+// import Group5099 from '../../assets/Group 5099.svg';
 const Choose = () => {
   return (
     <div className="choose">
@@ -29,9 +29,10 @@ const Choose = () => {
             <div className="title2"><h1>We Make Our customers happy
 by giving the Best Services.</h1></div>
             <div className="title-para"><p>With our deep understanding of technology, marketing trends, and industry best practices, we offer tailored solutions to meet your specific needs. Our creative and analytical approach ensures that we deliver impactful results that drive growth and success for your business.</p></div>
-            <div className="play">
-                <img src={Group5099} alt="" />
-            </div>
+            <button className="play">
+                {/* <img src={Group5099} alt="" /> */}
+                <i className="ri-play-circle-fill"></i>
+            </button>
         </div>
     </div>
   )

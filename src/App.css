@@ -22,7 +22,7 @@ html,body{
 }
 .main{
   width: 100%;
-  height: 400vh;
+  height: 550vh;
   background: #1A1C31;
   position: relative;
   overflow: hidden;
@@ -155,6 +155,11 @@ html,body{
   font-size: 1.3rem;
   color: #124364;
   font-weight: 700;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .2s;
+}
+.button button:hover{
+  background-color: #124364;
+  color: #EEDE2C;
 }
 .number{
   width: 19vmax;
@@ -260,7 +265,7 @@ html,body{
 }
 .choose{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -268,7 +273,7 @@ html,body{
 }
 .choose-right{
   width: 50vmax;
-  height: 100%;
+  height: 100%; 
   position: relative;
 }
 .choose-left{
@@ -356,24 +361,119 @@ html,body{
 }
 .title-para{
   width: 50%;
-  height: 7vmax;
+  height: 8vmax;
   margin-top: 1vmax;
   font-size: 0.9rem;
   color: #fff;
-  
 }
 .title-para p{
   font-family: 'Montserrat-thin';
 }
 .play{
-  width: 9vmax;
-  height: 9vmax;
+  width: 7vmax;
+  height: 7vmax;
   margin-top: 1vmax;
   object-fit: cover;
   object-position: center;
-  margin-left: -2vmax;
+  margin-left: -1vmax;
+  background-color: #887C18;
+  border: none;
+  border-radius: 50%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
 }
-.play img{
+.play:hover{
+  box-shadow: 1px 1px 17px #887d188f;
+}
+.play i{
+  font-size: 6rem;
+  color: #fff;
+}
+.team{
   width: 100%;
-  height: 100%;
+  height: 110vh;
+  background-image: url('../src/assets/Vector.svg');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team-up{
+  width: 100%;
+  height: 20vmax;
+  margin-top: 1vmax;
+  display: flex;
+  align-items: center;
+}
+.team-down{
+  width: 100%;
+  height: 30vmax;
+  margin-top: 1vmax;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.team-circle{
+  width: 20vmax;
+  height: 15vmax;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 10vmax;
+  margin-top: -2vmax;
+}
+.team-title{
+  width: 40vmax;
+  height: 20vmax;
+  font-size: 1.7rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.team-title h1{
+  font-family: "Montserrat";
+}
+.team-poly{
+  width: 10vmax;
+  height: 10vmax;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 5vmax;
+}
+.team-card{
+  width: 20vmax;
+  height: 25vmax;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.team-pic{
+  width: 20vmax;
+  height: 20vmax;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+.team-pic img{
+width: 100%;
+height: 100%;
+}
+.team-name{
+  width: 20vmax;
+  height: 4vmax;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.team-name h2{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  color: #fff;
+}
+.team-name h4{
+  font-size: 0.9rem;
+  font-family: "Montserrat-thin";
+  color: #fff;
 }
